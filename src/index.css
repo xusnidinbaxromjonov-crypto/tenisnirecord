@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --navy-hero: #0C1E34;
+    --navy-dark: #081525;
+    --accent-orange: #FF5B26;
+    --accent-cyan: #00C2FF;
+    --accent-lime: #D4F63C;
+    --accent-yellow: #FCD34D;
+    --bg-page: #F6F8FA;
+    --bg-card: #FFFFFF;
+  }
+
+  body {
+    background-color: #F6F8FA;
+    color: #0F172A;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  #root {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* 🏆 Uslub: Reference Rasmdagi Qalin Kondensirlangan Harflar */
+.font-sport {
+  font-family: 'Bebas Neue', 'Anton', sans-serif;
+  letter-spacing: 0.015em;
+  line-height: 0.92;
+  text-transform: uppercase;
+}
+
+.font-impact {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+/* 📁 Jild (Folder-tab) uslubi */
+.folder-card-tab {
+  position: relative;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+}
+
+.folder-tab-badge {
+  position: absolute;
+  top: -14px;
+  left: 20px;
+  padding: 4px 14px;
+  border-radius: 12px 12px 0 0;
+  font-weight: 800;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* 🏀 Pill Button uslubi */
+.btn-pill-sport {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 9999px;
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.btn-pill-sport:hover {
+  transform: translateY(-2px);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
